@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.menú {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menú li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menú li a {
+    padding: 7px 3px;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    text-transform: uppercase;
+    color: blue;
+}
+
+nav li:hover {
+    background-color: rgba(165, 42, 42, 0.596);
+}
