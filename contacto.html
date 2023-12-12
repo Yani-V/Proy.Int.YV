@@ -26,10 +26,90 @@
     <title>MyPageYV</title>
 </head>
 <body>
+    <!--Menú principal-->
+    <nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="*"> <img src="./public/img/icono.png" alt="icono"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./index.html">Home</a></li>
+                                <li><a class="dropdown-item" href="./información.html">Información</a></li>
+                                <li><a class="dropdown-item" href="./ayuda.html">Ayuda</a></li>
+                                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <main>
+    <!--Formulario-->
+    <h3>Si tienes datos importantes para aportar,<br> sos bienvenida/o para compartir.</h3> <br> <br>
     <form action="">
-        <input type="text">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="text"> <br> <br>
+        <label for="nombre">Apellido:</label>
+        <input type="text" name="text"> <br> <br>
+        <label for="total">Provincia: </label><select name="Provincia" id="Provincia">
+        <option value="Cord">Buenos Aires</option>
+        <option value="Ush">Ciudad Autónoma de Buenos Aires</option>
+        <option value="Rio">Catamarca</option>
+        <option value="Bs">Chaco</option>
+        <option value="Bs">Chubut</option>
+        <option value="Bs">Córdoba</option>
+        <option value="Bs">Corrientes</option>
+        <option value="Bs">Entre Rios</option>
+        <option value="Bs">Formosa</option>
+        <option value="Bs">Jujuy</option>
+        <option value="Bs">La Pampa</option>
+        <option value="Bs">La Rioja</option>
+        <option value="Bs">Mendoza</option>
+        <option value="Bs">Misiones</option>
+        <option value="Bs">Neuquén</option>
+        <option value="Bs">Río Negro</option>
+        <option value="Bs">Salta</option>
+        <option value="Bs">San Juan</option>
+        <option value="Bs">San Luis</option>
+        <option value="Bs">Santa Cruz</option>
+        <option value="Bs">Santa Fé</option>
+        <option value="Bs">Santiago del Estero</option>
+        <option value="Bs">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+        <option value="Bs">Tucumán</option>
+    </select> <br> <br>
+        <h6>¿Tienes alguna fecha conmemorativa sobre el cáncer? si es si, compartí:</h6> <br>
+        <input type="date"> <textarea name="día de" id="día de" cols="26" rows="1">Día de:</textarea><br> <br>
+        <h6>¿Conoces alguna fundación que esté funcionando actualmente? si es si, Compartí datos.</h6> <br>
+        <textarea name="" id="" cols="35" rows="2"></textarea> <br> <br>
+        <h6>¿Sugieres algún libro sobre testimonios sobrevivientes de cáncer? si es si, Compartí datos.</h6> <br>
+        <textarea name="" id="" cols="35" rows="2"></textarea> <br> <br>
+        <h6>¿Sugieres algún cambio a la página?</h6> <br>
+        <textarea name="" id="" cols="35" rows="2"></textarea> <br>
+        <br>
+        <input type="checkbox" name="informacion" id="informacion" checked><label for="informacion">Deseo recibir información sobre novedades y actualizaciones de la página</label> <br> <br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+        <br> <br>
+        <input type= "submit" value="Enviar"> <br> <br>
     </form>
+    </main>
+    <!--Datos en footer-->
+    <footer>
+        <p>Redes Sociales</p>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul> <br>
+        <p>&copy; Copyright - Yanina Velazquez - 2023</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
