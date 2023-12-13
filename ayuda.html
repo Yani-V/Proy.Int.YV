@@ -18,6 +18,9 @@
 
     <!--Vinculación a otras páginas-->
     <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="información.html">
+    <link rel="stylesheet" href="ayuda.html">
+    <link rel="stylesheet" href="contacto.html">
     
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -27,41 +30,44 @@
 </head>
 <body>
     <!--Menú principal-->
-    <nav>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="*"> <img src="./public/img/icono.png" alt="icono"> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="./index.html">Home</a></li>
-                                <li><a class="dropdown-item" href="./información.html">Información</a></li>
-                                <li><a class="dropdown-item" href="./ayuda.html">Ayuda</a></li>
-                                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./public/img/icono.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Información</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#definición1">¿Qué es el cáncer?</a></li>
+                                <li><a class="dropdown-item" href="#definición2">¿Qué es un tumor?</a></li>
+                                <li><a class="dropdown-item" href="#info1">¿Cuándo se disemina el cáncer?</a></li>
+                                <li><a class="dropdown-item" href="#info2">Diferencias entre células canceross y células normales</a></li>
+                                <li><a class="dropdown-item" href="#info3">¿Cómo se forma el cáncer?</a></li>
+                                <li><a class="dropdown-item" href="#info4">Tipo de Cánceres</a></li>
+                                <li><a class="dropdown-item" href="#info5">¿Cuáles son las causas del cáncer?</a></li>
+                                <li><a class="dropdown-item" href="#info6">Factores de riesgo para la Leucemia en Niños</a></li>
+                                <li><a class="dropdown-item" href="#info7">Información Visual</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="./ayuda.html">Ayuda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+        </div>
     </nav>
-    <!--Contenido de la página-->
+    <!--Contenido de página-->
     <main>
 
     <h2>Fundaciones</h2>
     <p>Acontinuación describo lista de fundaciones que existen  a nivel país en distintas provincias de la Argentina que ayudan de alguna u otra manera a pacientes oncológicos ya sea para adultos ó niños,adolescentes, jóvenes.</p>
     <ul>
+        <li>"Fundación Flexer" - Instagram: Fundación Natalí Dafne Flexer <br> Mansila 3125 - CABA</li>
+        <li>"CruZar" - Instagram: Red CruZar <br> Camarones 5549 Dto.2 - CABA. </li>
+        <li>"FundaMe" - Instagram: FundaMe Oncología Infantil <br> Av. Sarmiento (Prolongación Rivadavia) 1437 Este - Pcia. San Juan</li>
         <li>Fundación....</li>
-        <li>Fundación....</li>
-        <li>Fundación....</li>
-        <li>Fundación....</li>
-        <li>Fundación....</li>
-        <li>Fundación....</li>
+        <li>Asociación Civil Sostén</li>
+        <li>"F.A.E.H.E.R" - Facebook: Fundación Faeher  ONGs <br> San Luis 101 - Paraná - Entre Ríos</li>
         <li>Fundación....</li>
         <li>Fundación....</li>
         <li>Fundación....</li>
@@ -71,6 +77,9 @@
        
     </ul>
     <br> <br>
+    <aside>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56769804.94434661!2d-107.44042422288368!3d-29.721094158543032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1702434135667!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
     <h2>Libros</h2>
     <p>Acontinuación describo una lista de libros existentes de sobrevivientes de cáncer que motivan a pacientes oncológicos.</p>
     <br>

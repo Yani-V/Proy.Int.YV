@@ -27,32 +27,35 @@
 </head>
 <body>
     <!--Menú principal-->
-    <nav>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="*"> <img src="./public/img/icono.png" alt="icono"> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="./index.html">Home</a></li>
-                                <li><a class="dropdown-item" href="./información.html">Información</a></li>
-                                <li><a class="dropdown-item" href="./ayuda.html">Ayuda</a></li>
-                                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./public/img/icono.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Información</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#definición1">¿Qué es el cáncer?</a></li>
+                                <li><a class="dropdown-item" href="#definición2">¿Qué es un tumor?</a></li>
+                                <li><a class="dropdown-item" href="#info1">¿Cuándo se disemina el cáncer?</a></li>
+                                <li><a class="dropdown-item" href="#info2">Diferencias entre células canceross y células normales</a></li>
+                                <li><a class="dropdown-item" href="#info3">¿Cómo se forma el cáncer?</a></li>
+                                <li><a class="dropdown-item" href="#info4">Tipo de Cánceres</a></li>
+                                <li><a class="dropdown-item" href="#info5">¿Cuáles son las causas del cáncer?</a></li>
+                                <li><a class="dropdown-item" href="#info6">Factores de riesgo para la Leucemia en Niños</a></li>
+                                <li><a class="dropdown-item" href="#info7">Información Visual</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="./ayuda.html">Ayuda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+        </div>
     </nav>
     <main>
     <!--Formulario-->
-    <h3>Si tienes datos importantes para aportar,<br> sos bienvenida/o para compartir.</h3> <br> <br>
+    <h3>Sos Bienvenido/a a compartir tu experiencia en la batalla contra el cáncer.</h3> <br> <br>
     <form action="">
         <label for="nombre">Nombre:</label>
         <input type="text" name="text"> <br> <br>
@@ -84,18 +87,13 @@
         <option value="Bs">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
         <option value="Bs">Tucumán</option>
     </select> <br> <br>
-        <h6>¿Tienes alguna fecha conmemorativa sobre el cáncer? si es si, compartí:</h6> <br>
-        <input type="date"> <textarea name="día de" id="día de" cols="26" rows="1">Día de:</textarea><br> <br>
-        <h6>¿Conoces alguna fundación que esté funcionando actualmente? si es si, Compartí datos.</h6> <br>
-        <textarea name="" id="" cols="35" rows="2"></textarea> <br> <br>
-        <h6>¿Sugieres algún libro sobre testimonios sobrevivientes de cáncer? si es si, Compartí datos.</h6> <br>
-        <textarea name="" id="" cols="35" rows="2"></textarea> <br> <br>
-        <h6>¿Sugieres algún cambio a la página?</h6> <br>
-        <textarea name="" id="" cols="35" rows="2"></textarea> <br>
-        <br>
-        <input type="checkbox" name="informacion" id="informacion" checked><label for="informacion">Deseo recibir información sobre novedades y actualizaciones de la página</label> <br> <br>
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email">
+        <h6>¿Cuándo comenzaste a combatir el cáncer? si es si, compartí:</h6> <br>
+        <input type="date"> <br> <br>
+        <label for="edad">Edad</label>
+        <input type="number">
+        <br> <br>
+        <p>Deja tus comentarios, Comparte tu experiencia ó Brindanos más información.</p>
+        <textarea name="text" id="text" cols="60" rows="8"></textarea>
         <br> <br>
         <input type= "submit" value="Enviar"> <br> <br>
     </form>
