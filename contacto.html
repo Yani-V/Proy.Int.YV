@@ -5,56 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--Fuente de la página web-->
+<!--Fuente de la página web-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
     
-    <!--Íconos de la página web-->
+<!--Íconos de la página web-->
     <script src="https://kit.fontawesome.com/1ba3217a0c.js" crossorigin="anonymous"></script>
     
-    <!--Configuración de Estilos-->
+<!--Configuración de Estilos-->
     <link rel="stylesheet" href="./public/style.css">
 
-    <!--Vinculación a otras páginas-->
+<!--Vinculación a otras páginas-->
     <link rel="stylesheet" href="index.html">
     
-    <!--Bootstrap-->
+<!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--Favicon-->
-    <link rel="icon" type="image/png" href="./public/img/icono.png">
+<!--Favicon-->
+    <link rel="icon" type="image/png" href="./public/img/icono página.png">
     <title>MyPageYV</title>
 </head>
 <body>
-    <!--Menú principal-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="grid-container">
+<!--Menú principal-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="principio">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./public/img/icono.png" alt="logo"></a>
+            <a class="navbar-brand" href="./index.html"><img src="./public/img/icono página.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
-                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Información</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#definición1">¿Qué es el cáncer?</a></li>
-                                <li><a class="dropdown-item" href="#definición2">¿Qué es un tumor?</a></li>
-                                <li><a class="dropdown-item" href="#info1">¿Cuándo se disemina el cáncer?</a></li>
-                                <li><a class="dropdown-item" href="#info2">Diferencias entre células canceross y células normales</a></li>
-                                <li><a class="dropdown-item" href="#info3">¿Cómo se forma el cáncer?</a></li>
-                                <li><a class="dropdown-item" href="#info4">Tipo de Cánceres</a></li>
-                                <li><a class="dropdown-item" href="#info5">¿Cuáles son las causas del cáncer?</a></li>
-                                <li><a class="dropdown-item" href="#info6">Factores de riesgo para la Leucemia en Niños</a></li>
-                                <li><a class="dropdown-item" href="#info7">Información Visual</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="./ayuda.html">Ayuda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./información.html">Información</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./ayuda.html">Ayuda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
+<!--Contenido de página - Formulario-->
     <main>
-    <!--Formulario-->
     <h3>Sos Bienvenido/a a compartir tu experiencia en la batalla contra el cáncer.</h3> <br> <br>
     <form action="">
         <label for="nombre">Nombre:</label>
@@ -85,10 +74,10 @@
         <option value="Bs">Santa Fé</option>
         <option value="Bs">Santiago del Estero</option>
         <option value="Bs">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
-        <option value="Bs">Tucumán</option>
-    </select> <br> <br>
+        <option value="Bs">Tucumán</option></select>
+        <br> <br>
         <h6>¿Cuándo comenzaste a combatir el cáncer? si es si, compartí:</h6> <br>
-        <input type="date"> <br> <br>
+        <i class="fa-regular fa-calendar-days"></i> <input type="date"> <br> <br>
         <label for="edad">Edad</label>
         <input type="number">
         <br> <br>
@@ -98,16 +87,20 @@
         <input type= "submit" value="Enviar"> <br> <br>
     </form>
     </main>
-    <!--Datos en footer-->
+<!--Datos en footer-->
     <footer>
-        <p>Redes Sociales</p>
-        <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+        <a href="#principio"><img src="./public/img/icono volver.png" alt="icono flotante" class="iconoflotant"></a>
+        <p>Contactanos</p>
+        <ul class="contacto">
+            <li><a href="https://github.com/Yani-V"><img src="./public/img/icono github.png" alt="github" class="icons"></a></li>
+            <li><a href="#"><img src="./public/img/icono discordia.png" alt="discord" class="icons"></a></li>
+            <li><a href="#"><img src="./public/img/icono instagram.png" alt="instagram" class="icons"></a></li> <br>
+            <li><img src="./public/img/icono llamada.png" alt="llamada" class="icons"> +54915111111</li>
+            <li><img src="./public/img/icono gmail.png" alt="gmail" class="icons"> ayudayv@gmail</li>
         </ul> <br>
         <p>&copy; Copyright - Yanina Velazquez - 2023</p>
     </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
